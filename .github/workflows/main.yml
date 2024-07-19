@@ -28,7 +28,7 @@ jobs:
           wget https://raw.githubusercontent.com/ubuntu2310fake/ActionDocker/main/compose.yaml
           tailscale ip -4
           echo "thanh cong, ket noi bang port 8006 o trinh duyet Chrome"
-          sudo docker compose up
+          sudo docker compose up &>/dev/null &
   notify:
     needs: build
     runs-on: ubuntu-latest
@@ -37,4 +37,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Notify Slack and send eMail
-        run: echo hii
+        run: sleep 9999999999999999999999
