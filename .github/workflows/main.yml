@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: chuẩn bị phần mềm
-        run: mkdir /mnt/atest
+        run: sudo mkdir /mnt/atest
   notify:
     needs: build
     runs-on: ubuntu-latest
