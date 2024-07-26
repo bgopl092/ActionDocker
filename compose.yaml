@@ -1,5 +1,4 @@
 services:
-  windows:
     image: ptylenda/kimchi-docker
     resources:
             limits:
